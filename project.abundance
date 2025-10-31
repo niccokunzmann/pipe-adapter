@@ -98,8 +98,8 @@
     {
       "atomType": "Molecule",
       "name": "pipe",
-      "x": 0.32065217391304346,
-      "y": 0.22666666666666666,
+      "x": 0.33220108695652173,
+      "y": 0.16,
       "uniqueID": "c892dbf9-cbc8-4f8b-8ea3-515f2d8c42fb",
       "ioValues": [
         {
@@ -276,8 +276,8 @@
     {
       "atomType": "Molecule",
       "name": "pipe",
-      "x": 0.32404891304347827,
-      "y": 0.584,
+      "x": 0.32948369565217395,
+      "y": 0.808,
       "uniqueID": "00be8ff7-28f0-4b44-814c-d0e7aba54428",
       "ioValues": [
         {
@@ -454,8 +454,8 @@
     {
       "atomType": "Molecule",
       "name": "connection",
-      "x": 0.5502717391304348,
-      "y": 0.6613333333333333,
+      "x": 0.40828804347826086,
+      "y": 0.4213333333333333,
       "uniqueID": "6d65a4bf-0cfe-44fc-b163-cbab86368486",
       "ioValues": [
         {
@@ -470,12 +470,12 @@
         },
         {
           "name": "hole 2",
-          "ioValue": 20,
+          "ioValue": 10,
           "currentEquation": "20"
         },
         {
           "name": "outer 2",
-          "ioValue": 30,
+          "ioValue": 20,
           "currentEquation": "30"
         },
         {
@@ -573,7 +573,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 20
+              "ioValue": 10
             }
           ]
         },
@@ -586,7 +586,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 30
+              "ioValue": 20
             }
           ]
         },
@@ -627,7 +627,7 @@
             {
               "name": "Shape 3",
               "ioValue": {
-                "geometry": "move-circle-15-0-0-0",
+                "geometry": "move-circle-10-0-0-0",
                 "dimension": "2D",
                 "tags": [],
                 "plane": {
@@ -737,7 +737,7 @@
             {
               "name": "Shape 2",
               "ioValue": {
-                "geometry": "move-circle-10-0-0-0",
+                "geometry": "move-circle-5-0-0-0",
                 "dimension": "2D",
                 "tags": [],
                 "plane": {
@@ -794,7 +794,7 @@
             {
               "name": "Shape 1",
               "ioValue": {
-                "geometry": "cut-loft-circle-10-move-circle-15-0-0-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-{\"origin\":[0,0,10],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-loft-circle-5-move-circle-10-0-0-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-{\"origin\":[0,0,10],\"xDir\":[1,0,0],\"normal\":[0,0,1]}",
+                "geometry": "cut-loft-circle-10-move-circle-10-0-0-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-{\"origin\":[0,0,10],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-loft-circle-5-move-circle-5-0-0-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-{\"origin\":[0,0,10],\"xDir\":[1,0,0],\"normal\":[0,0,1]}",
                 "dimension": "3D",
                 "tags": [],
                 "plane": {
@@ -821,7 +821,7 @@
             {
               "name": "Shape 2",
               "ioValue": {
-                "geometry": "cut-loft-circle-5-move-circle-10-0-0-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-{\"origin\":[0,0,10],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-loft-circle-10-move-circle-15-0-0-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-{\"origin\":[0,0,10],\"xDir\":[1,0,0],\"normal\":[0,0,1]}",
+                "geometry": "cut-loft-circle-5-move-circle-5-0-0-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-{\"origin\":[0,0,10],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-loft-circle-10-move-circle-10-0-0-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-{\"origin\":[0,0,10],\"xDir\":[1,0,0],\"normal\":[0,0,1]}",
                 "dimension": "3D",
                 "tags": [],
                 "plane": {
@@ -967,6 +967,24 @@
       ],
       "fileTypeVersion": 1,
       "compiledBom": []
+    },
+    {
+      "atomType": "Equation",
+      "name": "abs(x - y)",
+      "x": 0.28125,
+      "y": 0.592,
+      "uniqueID": "35e43f1c-5062-43c7-8c53-c256e85172c8",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 1
+        },
+        {
+          "name": "y",
+          "ioValue": 1
+        }
+      ],
+      "currentEquation": "abs(x - y)"
     }
   ],
   "allConnectors": [
@@ -978,10 +996,23 @@
     },
     {
       "ap1Name": "number or geometry",
+      "ap2Name": "hole 1",
+      "ap1ID": "f567aa21-15ad-4d60-9f9e-25533b9127c7",
+      "ap2ID": "6d65a4bf-0cfe-44fc-b163-cbab86368486"
+    },
+    {
+      "ap1Name": "number or geometry",
       "ap2Name": "outer diameter",
       "ap1ID": "a933694d-140e-4e24-aaf1-23b94cce5975",
       "ap2ID": "c892dbf9-cbc8-4f8b-8ea3-515f2d8c42fb"
     },
+    {
+      "ap1Name": "number or geometry",
+      "ap2Name": "outer 1",
+      "ap1ID": "a933694d-140e-4e24-aaf1-23b94cce5975",
+      "ap2ID": "6d65a4bf-0cfe-44fc-b163-cbab86368486"
+    },
+    null,
     {
       "ap1Name": "number or geometry",
       "ap2Name": "inner diameter",
@@ -990,9 +1021,21 @@
     },
     {
       "ap1Name": "number or geometry",
+      "ap2Name": "hole 2",
+      "ap1ID": "847706bf-077d-4fc5-97db-66239f400a57",
+      "ap2ID": "6d65a4bf-0cfe-44fc-b163-cbab86368486"
+    },
+    {
+      "ap1Name": "number or geometry",
       "ap2Name": "outer diameter",
       "ap1ID": "cd91644f-49e9-45c8-bfcf-7036d2fa30dd",
       "ap2ID": "00be8ff7-28f0-4b44-814c-d0e7aba54428"
+    },
+    {
+      "ap1Name": "number or geometry",
+      "ap2Name": "outer 2",
+      "ap1ID": "cd91644f-49e9-45c8-bfcf-7036d2fa30dd",
+      "ap2ID": "6d65a4bf-0cfe-44fc-b163-cbab86368486"
     },
     {
       "ap1Name": "number or geometry",
