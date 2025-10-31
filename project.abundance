@@ -1,15 +1,127 @@
 {
-    "atomType": "Molecule",
-    "name": "pipe-adapter",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "759f407f-9811-41a3-82d5-687fab076fa6",
-    "ioValues": [],
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "compiledBom": {},
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "name": "pipe-adapter",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "759f407f-9811-41a3-82d5-687fab076fa6",
+  "ioValues": [
+    {
+      "name": "pipe 1 hole diameter",
+      "ioValue": 10,
+      "currentEquation": "10"
+    },
+    {
+      "name": "pipe 1 outer diameter",
+      "ioValue": 20,
+      "currentEquation": "20"
+    },
+    {
+      "name": "pipe 2 hole diameter",
+      "ioValue": 10,
+      "currentEquation": "10"
+    },
+    {
+      "name": "pipe 2 outer diameter",
+      "ioValue": 20,
+      "currentEquation": "20"
+    },
+    {
+      "name": "pipe 1 length",
+      "ioValue": 10
+    },
+    {
+      "name": "pipe 2 length",
+      "ioValue": 10
+    }
+  ],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "name": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "5c24ea6f-1bf0-4c2d-bb28-5022fd608806",
+      "ioValues": []
+    },
+    {
+      "atomType": "Input",
+      "name": "pipe 1 hole diameter",
+      "x": 0.025384615384615384,
+      "y": 0.15384615384615385,
+      "uniqueID": "f567aa21-15ad-4d60-9f9e-25533b9127c7",
+      "ioValues": [],
+      "type": "number"
+    },
+    {
+      "atomType": "Input",
+      "name": "pipe 1 outer diameter",
+      "x": 0.025384615384615384,
+      "y": 0.23076923076923078,
+      "uniqueID": "a933694d-140e-4e24-aaf1-23b94cce5975",
+      "ioValues": [],
+      "type": "number"
+    },
+    {
+      "atomType": "Input",
+      "name": "pipe 2 hole diameter",
+      "x": 0.025384615384615384,
+      "y": 0.3076923076923077,
+      "uniqueID": "847706bf-077d-4fc5-97db-66239f400a57",
+      "ioValues": [],
+      "type": "number"
+    },
+    {
+      "atomType": "Input",
+      "name": "pipe 2 outer diameter",
+      "x": 0.025384615384615384,
+      "y": 0.38461538461538464,
+      "uniqueID": "cd91644f-49e9-45c8-bfcf-7036d2fa30dd",
+      "ioValues": [],
+      "type": "number"
+    },
+    {
+      "atomType": "Input",
+      "name": "pipe 1 length",
+      "x": 0.025384615384615384,
+      "y": 0.46153846153846156,
+      "uniqueID": "0d3dbd77-60fd-46e9-a06f-eb43db9633af",
+      "ioValues": [],
+      "type": "number"
+    },
+    {
+      "atomType": "Input",
+      "name": "pipe 2 length",
+      "x": 0.025384615384615384,
+      "y": 0.5384615384615385,
+      "uniqueID": "4bffa511-2e22-4a81-86b1-a52ce4512cc3",
+      "ioValues": [],
+      "type": "number"
+    },
+    {
+      "atomType": "Circle",
+      "name": "Circle",
+      "x": 0.22311046511627905,
+      "y": 0.4074074074074074,
+      "uniqueID": "ba96c6d3-acfa-40f3-ab9d-a5b49adb7f16",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 10
+        }
+      ]
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap1Name": "number or geometry",
+      "ap2Name": "diameter",
+      "ap1ID": "f567aa21-15ad-4d60-9f9e-25533b9127c7",
+      "ap2ID": "ba96c6d3-acfa-40f3-ab9d-a5b49adb7f16"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "compiledBom": {},
+  "filetypeVersion": 1
 }
