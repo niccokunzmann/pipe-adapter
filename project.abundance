@@ -1141,6 +1141,31 @@
         }
       ],
       "unionType": "Fusion"
+    },
+    {
+      "atomType": "Export",
+      "name": "Export",
+      "x": 0.8913043478260869,
+      "y": 0.23199999999999998,
+      "uniqueID": "b7df6889-591c-45e6-b352-831e10e489b9",
+      "ioValues": [
+        {
+          "name": "File Type",
+          "ioValue": "STL"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "pipe-adapter"
+        }
+      ],
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "pipe-adapter"
     }
   ],
   "allConnectors": [
@@ -1281,6 +1306,12 @@
       "ap2Name": "number or geometry",
       "ap1ID": "13a62ab8-25d5-4093-8075-c1fe0e52aa9d",
       "ap2ID": "5c24ea6f-1bf0-4c2d-bb28-5022fd608806"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry",
+      "ap1ID": "13a62ab8-25d5-4093-8075-c1fe0e52aa9d",
+      "ap2ID": "b7df6889-591c-45e6-b352-831e10e489b9"
     }
   ],
   "unitsKey": "MM",
