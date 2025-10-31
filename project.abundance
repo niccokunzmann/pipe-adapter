@@ -112,15 +112,18 @@
         },
         {
           "name": "length",
-          "ioValue": 1
+          "ioValue": 20,
+          "currentEquation": "20"
         },
         {
           "name": "inner diameter",
-          "ioValue": 10
+          "ioValue": 10,
+          "currentEquation": "10"
         },
         {
           "name": "outer diameter",
-          "ioValue": 10
+          "ioValue": 20,
+          "currentEquation": "20"
         }
       ],
       "topLevel": false,
@@ -182,7 +185,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 10
+              "ioValue": 20
             }
           ]
         },
