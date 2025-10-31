@@ -7,7 +7,8 @@
   "ioValues": [
     {
       "name": "pipe 1 hole diameter",
-      "ioValue": 10
+      "ioValue": 10,
+      "currentEquation": "10"
     },
     {
       "name": "pipe 1 outer diameter",
@@ -449,6 +450,137 @@
       ],
       "fileTypeVersion": 1,
       "compiledBom": []
+    },
+    {
+      "atomType": "ShrinkWrap",
+      "name": "Shrink Wrap",
+      "x": 0.6283967391304348,
+      "y": 0.3466666666666667,
+      "uniqueID": "4caa5f29-4f20-49a9-8628-c4b142e5e3c4",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": {
+            "geometry": "move-circle-10-0-30-0",
+            "dimension": "2D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                20
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": {
+            "geometry": "circle-5",
+            "dimension": "2D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": null
+        }
+      ]
+    },
+    {
+      "atomType": "Circle",
+      "name": "Circle",
+      "x": 0.48029891304347827,
+      "y": 0.25333333333333335,
+      "uniqueID": "e8248dfd-6da0-4f25-8c3e-c943019b1a4c",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 10,
+          "currentEquation": "10"
+        }
+      ]
+    },
+    {
+      "atomType": "Circle",
+      "name": "Circle",
+      "x": 0.4232336956521739,
+      "y": 0.7306666666666667,
+      "uniqueID": "9be1de3a-792a-4a51-bf10-52227d247743",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 20,
+          "currentEquation": "20"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "name": "Extrude",
+      "x": 0.734375,
+      "y": 0.5146666666666667,
+      "uniqueID": "3d88ed6c-6659-424c-a284-e922c42e46d6",
+      "ioValues": [
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "name": "Move",
+      "x": 0.5679347826086957,
+      "y": 0.784,
+      "uniqueID": "2053e1f6-316d-4769-ae1a-fdd05bb8530e",
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 30,
+          "currentEquation": "30"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 20,
+          "currentEquation": "20"
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -487,10 +619,40 @@
       "ap2Name": "length",
       "ap1ID": "4bffa511-2e22-4a81-86b1-a52ce4512cc3",
       "ap2ID": "00be8ff7-28f0-4b44-814c-d0e7aba54428"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry",
+      "ap1ID": "4caa5f29-4f20-49a9-8628-c4b142e5e3c4",
+      "ap2ID": "3d88ed6c-6659-424c-a284-e922c42e46d6"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "Shape 2",
+      "ap1ID": "e8248dfd-6da0-4f25-8c3e-c943019b1a4c",
+      "ap2ID": "4caa5f29-4f20-49a9-8628-c4b142e5e3c4"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry",
+      "ap1ID": "9be1de3a-792a-4a51-bf10-52227d247743",
+      "ap2ID": "2053e1f6-316d-4769-ae1a-fdd05bb8530e"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "number or geometry",
+      "ap1ID": "3d88ed6c-6659-424c-a284-e922c42e46d6",
+      "ap2ID": "5c24ea6f-1bf0-4c2d-bb28-5022fd608806"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "Shape 1",
+      "ap1ID": "2053e1f6-316d-4769-ae1a-fdd05bb8530e",
+      "ap2ID": "4caa5f29-4f20-49a9-8628-c4b142e5e3c4"
     }
   ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
-  "compiledBom": {},
+  "compiledBom": [],
   "filetypeVersion": 1
 }
