@@ -1,0 +1,15 @@
+{
+    "atomType": "Molecule",
+    "name": "pipe-adapter",
+    "x": 0,
+    "y": 0,
+    "uniqueID": "759f407f-9811-41a3-82d5-687fab076fa6",
+    "ioValues": [],
+    "topLevel": true,
+    "allAtoms": [],
+    "allConnectors": [],
+    "unitsKey": "MM",
+    "fileTypeVersion": 1,
+    "compiledBom": {},
+    "filetypeVersion": 1
+}
