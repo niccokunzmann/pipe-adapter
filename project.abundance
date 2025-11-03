@@ -7,18 +7,15 @@
   "ioValues": [
     {
       "name": "pipe 1 hole diameter",
-      "ioValue": 39,
-      "currentEquation": "39"
+      "ioValue": 39
     },
     {
       "name": "pipe 1 outer diameter",
-      "ioValue": 49,
-      "currentEquation": "49"
+      "ioValue": 49
     },
     {
       "name": "pipe 2 hole diameter",
-      "ioValue": 32,
-      "currentEquation": "32"
+      "ioValue": 32
     },
     {
       "name": "pipe 2 outer diameter",
@@ -265,6 +262,31 @@
         }
       ],
       "unionType": "Fusion"
+    },
+    {
+      "atomType": "Export",
+      "name": "Export",
+      "x": 0.8960597826086957,
+      "y": 0.19466666666666668,
+      "uniqueID": "id-135",
+      "ioValues": [
+        {
+          "name": "File Type",
+          "ioValue": "STL"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "pipe-adapter"
+        }
+      ],
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "pipe-adapter"
     },
     {
       "atomType": "Molecule",
@@ -1134,31 +1156,6 @@
       ],
       "fileTypeVersion": 1,
       "compiledBom": []
-    },
-    {
-      "atomType": "Export",
-      "name": "Export",
-      "x": 0.8960597826086957,
-      "y": 0.19466666666666668,
-      "uniqueID": "id-135",
-      "ioValues": [
-        {
-          "name": "File Type",
-          "ioValue": "STL"
-        },
-        {
-          "name": "Resolution (dpi)",
-          "ioValue": 96
-        },
-        {
-          "name": "Part Name",
-          "ioValue": "pipe-adapter"
-        }
-      ],
-      "type": null,
-      "resolution": 96,
-      "importIndex": 0,
-      "partName": "pipe-adapter"
     }
   ],
   "allConnectors": [
